@@ -44,3 +44,22 @@ var	d = prompt("Podaj wartość d", d);
 
 alert(valueHigherEqualZero + " i wynosi " + valueCmultiplyD);
 console.log(valueHigherEqualZero + " i wynosi " + valueCmultiplyD);
+
+
+
+
+
+var e = prompt("Podaj wartość e", e);
+var	f = prompt("Podaj wartość f", f);
+	valueEdivideF = e / f;
+	valueEdivideFModulo = e % f;
+
+	if (valueEdivideFModulo == 0) {
+		alert("nie ma reszty z dzielenia " + e + " / " + f)
+		console.log("nie ma reszty z dzielenia " + e + " / " + f)
+	}
+	else
+	{
+		alert("Reszta z dzielenia " + e + " / " + f + " równa jest " + valueEdivideFModulo)
+		console.log("Reszta z dzielenia " + e + " / " + f + " równa jest " + valueEdivideFModulo)
+	}
