@@ -33,3 +33,14 @@ if (value == 0) {
 
 alert("(" + a + " x "+ a +") + (2 x " + a + " + " + b + ") - (" + b + " x " + b + ") = " + value);
 console.log(value);
+
+
+
+var c = prompt("Podaj wartość c", c);
+var	d = prompt("Podaj wartość d", d);
+	valueCmultiplyD = c * d;
+	valueHigherEqualZero = valueCmultiplyD >= 0 ? "Wynik mnożenia c * d jest większy lub równy zeru" : "Wynik mnożenia c * d jest mniejszy od zera";
+
+
+alert(valueHigherEqualZero + " i wynosi " + valueCmultiplyD);
+console.log(valueHigherEqualZero + " i wynosi " + valueCmultiplyD);
