@@ -4,10 +4,41 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width= device-width, initial-scale= 1.0">
 	<title>8.6 Javascript matematyka</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Marcellus+SC');
+		body {
+			text-align: center;
+			font-family: Marcellus SC;
+			padding: 0;
+			margin: 0;
+		}
+		h2 {
+			margin-top: 50px;
+			background-color: lightyellow;
+		}
+		h2:before, h2:after {
+			content: " ";
+			height: 1px;
+			width: 100%;
+			background-color: grey;
+			display: block;
+			margin: 10px 0;
+		}
+
+	</style>
 </head>
+
 <body>
-<body>
-	<h1 id="pole"></h1>
+	<h1>Javascript matematyka</h1>
+
+	<h2>długie działanie</h2>
+	<p>Wynik z mnożenia (a * a) + (2 * a * b) - (b * b) równy jest </p><p id="mnozenie"></p>
+
+	<h2>krótkie działanie na mnożenie</h2>
+	<p>Wynik z mnożenia c * d czyli <span id="krotkieMnozenie"></span></p>
+
+	<h2>Szukamy modulo</h2>
+	<p id="modulo"></p>
+
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

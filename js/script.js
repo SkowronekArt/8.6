@@ -17,9 +17,9 @@
 9.	Udostępnij repozytorium swojemu mentorowi.
 */
 
-var a = prompt("Podaj wartość a", a)
-var b = prompt("Podaj wartość b", b)
-	value = (a * a) + (2 * a * b) - (b * b)
+var a = prompt("Podaj wartość a", a);
+var b = prompt("Podaj wartość b", b);
+var	value = (a * a) + (2 * a * b) - (b * b);
 
 if (value < 0) {
 	console.log("Wynik jest mniejszy od zera");
@@ -31,18 +31,18 @@ if (value == 0) {
 	console.log("Wynik równy jest zeru");
 }
 
-alert("(" + a + " x "+ a +") + (2 x " + a + " + " + b + ") - (" + b + " x " + b + ") = " + value);
+
+document.getElementById("mnozenie").innerHTML = ("(" + a + " x "+ a +") + (2 x " + a + " + " + b + ") - (" + b + " x " + b + ") = " + value);
 console.log(value);
 
 
 
 var c = prompt("Podaj wartość c", c);
 var	d = prompt("Podaj wartość d", d);
-	valueCmultiplyD = c * d;
-	valueHigherEqualZero = valueCmultiplyD >= 0 ? "Wynik mnożenia c * d jest większy lub równy zeru" : "Wynik mnożenia c * d jest mniejszy od zera";
+var valueCmultiplyD = c * d;
+var valueHigherEqualZero = valueCmultiplyD >= 0 ? (c + " * " + d + " jest większy lub równy zeru") : (c + " * " + d + " jest mniejszy od zera");
 
-
-alert(valueHigherEqualZero + " i wynosi " + valueCmultiplyD);
+document.getElementById("krotkieMnozenie").innerHTML = (valueHigherEqualZero + " i wynosi " + valueCmultiplyD);
 console.log(valueHigherEqualZero + " i wynosi " + valueCmultiplyD);
 
 
@@ -51,15 +51,15 @@ console.log(valueHigherEqualZero + " i wynosi " + valueCmultiplyD);
 
 var e = prompt("Podaj wartość e", e);
 var	f = prompt("Podaj wartość f", f);
-	valueEdivideF = e / f;
-	valueEdivideFModulo = e % f;
+var valueEdivideF = e / f;
+var valueEdivideFModulo = e % f;
 
 	if (valueEdivideFModulo == 0) {
-		alert("nie ma reszty z dzielenia " + e + " / " + f)
-		console.log("nie ma reszty z dzielenia " + e + " / " + f)
+		document.getElementById("modulo").innerHTML = ("Wynik dzielenia e/f czyli " + e + " / " + f + " równy jest " + valueEdivideF + "<br/>Nie ma reszty z tego dzielenia");
+		console.log("Nie ma reszty z dzielenia " + e + " / " + f);
 	}
 	else
 	{
-		alert("Reszta z dzielenia " + e + " / " + f + " równa jest " + valueEdivideFModulo)
-		console.log("Reszta z dzielenia " + e + " / " + f + " równa jest " + valueEdivideFModulo)
+		document.getElementById("modulo").innerHTML = ("Wynik dzielenia e/f czyli " + e + " / " + f + " równy jest " + valueEdivideF + "<br/>A reszta z tego dzielenia to " + valueEdivideFModulo);
+		console.log("Reszta z dzielenia " + e + " / " + f + " równa jest " + valueEdivideFModulo);
 	}
