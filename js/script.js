@@ -17,8 +17,8 @@
 9.	Udostępnij repozytorium swojemu mentorowi.
 */
 
-var a = prompt("Podaj wartość a", a);
-var b = prompt("Podaj wartość b", b);
+var a = prompt("Podaj wartość a", "1");
+var b = prompt("Podaj wartość b", "1");
 var	value = (a * a) + (2 * a * b) - (b * b);
 
 if (value < 0) {
@@ -37,8 +37,8 @@ console.log(value);
 
 
 
-var c = prompt("Podaj wartość c", c);
-var	d = prompt("Podaj wartość d", d);
+var c = prompt("Podaj wartość c", "1");
+var	d = prompt("Podaj wartość d", "1");
 var valueCmultiplyD = c * d;
 var valueHigherEqualZero = valueCmultiplyD >= 0 ? (c + " * " + d + " jest większy lub równy zeru") : (c + " * " + d + " jest mniejszy od zera");
 
@@ -49,8 +49,8 @@ console.log(valueHigherEqualZero + " i wynosi " + valueCmultiplyD);
 
 
 
-var e = prompt("Podaj wartość e", e);
-var	f = prompt("Podaj wartość f", f);
+var e = prompt("Podaj wartość e", "1");
+var	f = prompt("Podaj wartość f", "1");
 var valueEdivideF = e / f;
 var valueEdivideFModulo = e % f;
 
